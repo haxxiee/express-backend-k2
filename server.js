@@ -7,5 +7,5 @@ app.use(express.json());
 app.use("/books", booksRouter);
 
 app.listen(4000, () => {
-  console.log("Servern kör på port 4000");
+  console.log("Servern is running on port 4000");
 });
