@@ -37,8 +37,9 @@ async function addBook(req, res) {
     genre,
   };
 
-  const result = await model.addOne(newBook);
-  res.json({ message: "success", data: result });
+  await model.addOne(newBook);
+
+  res.json({ message: "success" });
 }
 
 async function putBook(req, res) {
